@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>531</width>
+    <height>352</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>SHIDO API</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../SHIDO.jpg</normaloff>../../../../SHIDO.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+
+QWidget{
+background-color:#0a0a0a;
+color:white;
+font-family:Nunito;
+font-size:11pt;
+}
+
+/* Neon Header */
+
+QLabel{
+background:qlineargradient(
+x1:0,y1:0,x2:1,y2:0,
+stop:0 #00f2ff,
+stop:1 #0077ff
+);
+border-radius:6px;
+padding:6px;
+font-weight:bold;
+}
+
+/* GroupBox Neon */
+
+QGroupBox{
+border:2px solid #00eaff;
+border-radius:12px;
+margin-top:10px;
+background:#111;
+}
+
+QGroupBox::title{
+subcontrol-origin:margin;
+left:10px;
+padding:0 6px;
+color:#00eaff;
+font-weight:bold;
+}
+
+/* Table Dark */
+
+QTableWidget{
+background:#0d0d0d;
+gridline-color:#00eaff;
+border:none;
+}
+
+QHeaderView::section{
+background:#00aaff;
+color:white;
+border:none;
+padding:5px;
+}
+
+/* Button Base */
+
+QPushButton{
+border-radius:10px;
+font-weight:bold;
+padding:6px;
+}
+
+/* ON BUTTON */
+
+QPushButton#btn_on{
+background:#00ff88;
+color:black;
+}
+
+QPushButton#btn_on:hover{
+background:#00ffaa;
+}
+
+/* RESET BUTTON */
+
+QPushButton#btn_reset{
+background:#ffaa00;
+color:black;
+}
+
+QPushButton#btn_reset:hover{
+background:#ffc933;
+}
+
+/* OFF BUTTON */
+
+QPushButton#btn_off{
+background:#ff3c3c;
+color:white;
+}
+
+QPushButton#btn_off:hover{
+background:#ff5555;
+}
+
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>20</y>
+     <width>421</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ระบบเปิด-ปิด ไฟบ้าน</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>55</y>
+     <width>421</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>STATUS</string>
+   </property>
+   <widget class="QTableWidget" name="text_status">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>25</y>
+      <width>401</width>
+      <height>125</height>
+     </rect>
+    </property>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>No</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Status</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Day</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Time</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btn_on">
+   <property name="geometry">
+    <rect>
+     <x>74</x>
+     <y>260</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ON</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_reset">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>260</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>RESET</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_off">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>260</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OFF</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

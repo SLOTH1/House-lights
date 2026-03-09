@@ -1,2 +1,3 @@
-# House-lights
-โปรเจคเปิดปิดไฟผ่านระบบออนไลน์
+# Week14
+
+## PyQT6 & sqlite
